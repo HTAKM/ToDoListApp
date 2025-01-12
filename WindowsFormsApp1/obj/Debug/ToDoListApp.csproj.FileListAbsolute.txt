@@ -1,0 +1,10 @@
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ToDoListApp.csproj.AssemblyReference.cache
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ToDoList.resources
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ToDoListApp.csproj.GenerateResource.cache
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\ToDoListApp.csproj.CoreCompileInputs.cache
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\yukha\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
