@@ -41,25 +41,7 @@ namespace WindowsFormsApp1
             finishTaskListView.Columns.Add("ID", finishTaskListView.Width / 8 - 2, HorizontalAlignment.Left);
             finishTaskListView.Columns.Add("Task Name", finishTaskListView.Width * 5 / 8 - 2, HorizontalAlignment.Left);
             finishTaskListView.Columns.Add("Due Date", -2, HorizontalAlignment.Center);
-            foreach (DataRow row in taskList.Rows)
-            {
-                if (int.Parse(row[0].ToString()) > nextID)
-                {
-                    nextID = int.Parse(row[0].ToString());
-                }
-                ListViewItem item = new ListViewItem(row[0].ToString());
-                item.SubItems.Add(row[1].ToString());
-                item.SubItems.Add(row[2].ToString());
-                if (bool.Parse(row[taskList.Columns.Count - 1].ToString()))
-                {
-                    finishTaskListView.Items.Add(item);
-                }
-                else
-                {
-                    unfinishTaskListView.Items.Add(item);
-                }
-            }
-            nextID++;
+            reloadListView();
         }
 
         private void InitializeList()
@@ -126,8 +108,13 @@ namespace WindowsFormsApp1
         {
             unfinishTaskListView.Items.Clear();
             finishTaskListView.Items.Clear();
+            nextID = -1;
             foreach (DataRow row in taskList.Rows)
             {
+                if (int.Parse(row[0].ToString()) > nextID)
+                {
+                    nextID = int.Parse(row[0].ToString());
+                }
                 ListViewItem item = new ListViewItem(row[0].ToString());
                 item.SubItems.Add(row[1].ToString());
                 item.SubItems.Add(row[2].ToString());
@@ -140,6 +127,7 @@ namespace WindowsFormsApp1
                     unfinishTaskListView.Items.Add(item);
                 }
             }
+            nextID++;
         }
 
         private void unEdit()
